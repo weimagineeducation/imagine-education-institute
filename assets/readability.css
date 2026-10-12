@@ -1,0 +1,14 @@
+/* Readability enhancements: body copy only; display headings unchanged. */
+@media (min-width: 768px) {
+ body :is(p,li):is(.text-xs,.text-sm,.text-base){font-size:18px;line-height:1.65}
+ body :is(p,li).text-lg{font-size:20px;line-height:1.65}
+ body :is(a,button,label,span).text-xs{font-size:15px;line-height:1.45}
+ body :is(a,button,label,span).text-sm{font-size:16px;line-height:1.5}
+ body :is(a,button,label,span).text-base{font-size:17px;line-height:1.5}
+}
+@media (max-width: 767px) {
+ body :is(p,li):is(.text-xs,.text-sm,.text-base){font-size:16px;line-height:1.6}
+ body :is(p,li).text-lg{font-size:18px;line-height:1.6}
+ body :is(a,button,label,span).text-xs{font-size:14px;line-height:1.4}
+ body :is(a,button,label,span).text-sm{font-size:15px;line-height:1.45}
+}
